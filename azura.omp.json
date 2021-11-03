@@ -63,7 +63,7 @@
           "leading_diamond": "<transparent,#BB9AF7>\uE0B0</>",
           "trailing_diamond": "\uE0B0",
           "foreground": "#ffffff",
-          "background": "#BB9AF7",
+          "background": "#43335f",
           "properties": {
             "threshold": 0,
             "style": "dallas",
