@@ -53,8 +53,8 @@
             "status_colors_enabled": true,
             "local_changes_color": "#363B54",
             "ahead_and_behind_color": "#363B54",
-            "behind_color": "#B388FF",
-            "ahead_color": "#B388FF"
+            "behind_color": "#43335f",
+            "ahead_color": "#43335f"
           }
         },
         {
