@@ -44,7 +44,7 @@
           "style": "powerline",
           "powerline_symbol": "\uE0B0",
           "foreground": "#787C99",
-          "background": "#00C853",
+          "background": "#363B54",
           "properties": {
             "display_stash_count": true,
             "staging_color": "#ff7420",
