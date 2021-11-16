@@ -1,133 +1,189 @@
 {
-  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
-  "final_space": false,
-  "osc99": true,
-  "console_title": true,
-  "console_title_style": "template",
-  "console_title_template": "{{if .Root}} ⚡ {{end}}{{.Folder | replace \"~\" \"🏚\" }} @ {{.Host}}",
-  "blocks": [
-    {
-      "type": "prompt",
-      "alignment": "left",
-      "segments": [
-        {
-          "type": "root",
-          "style": "plain",
-          "foreground": "#FFEB3B",
-          "background": "#a313a8",
-          "properties": {
-            "root_icon": "⚡"
+    "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+    "final_space": true,
+    "blocks": [
+      {
+        "type": "prompt",
+        "alignment": "right",
+        "segments": [
+          {
+            "type": "session",
+            "style": "diamond",
+            "trailing_diamond": "\uE0B4 ",
+            "leading_diamond": "\uE0B6",
+            "foreground": "foreground",
+            "background": "#29315A",
+            "properties": {
+              "display_host": false,
+              "postfix": "",
+              "prefix": ""
+            }
+          },
+          {
+            "type": "path",
+            "style": "diamond",
+            "trailing_diamond": "\uE0B4",
+            "leading_diamond": "\uE0B6",
+            "foreground": "yellow",
+            "background": "#29315A",
+            "properties": {
+              "prefix": "\uE5FF ",
+              "postfix": "",
+              "style": "folder"
+            }
+          },
+          {
+            "type": "git",
+            "style": "diamond",
+            "trailing_diamond": "\uE0B4",
+            "leading_diamond": " \uE0B6",
+            "foreground": "#787C99",
+            "background": "#363B54",
+            "properties": {
+              "display_stash_count": true,
+              "staging_color": "#ff7420",
+              "display_status": true,
+              "display_upstream_icon": true,
+              "status_colors_enabled": true,
+              "local_changes_color": "#363B54",
+              "ahead_and_behind_color": "#363B54",
+              "behind_color": "#43335f",
+              "ahead_color": "#43335f"
+            }
+          },
+          {
+            "type": "python",
+            "style": "diamond",
+            "trailing_diamond": "\uE0B4",
+            "leading_diamond": " \uE0B6",
+            "foreground": "#E4F34A",
+            "background": "#29315A",
+            "properties": {
+              "prefix": "\uE235",
+              "postfix": "",
+              "display_version": false
+            }
+          },
+          {
+            "type": "go",
+            "style": "diamond",
+            "trailing_diamond": "\uE0B4",
+            "leading_diamond": " \uE0B6",
+            "foreground": "#7FD5EA",
+            "background": "#29315A",
+            "properties": {
+              "prefix": "\uFCD1",
+              "postfix": "",
+              "display_version": false
+            }
+          },
+          {
+            "type": "node",
+            "style": "diamond",
+            "trailing_diamond": "\uE0B4",
+            "leading_diamond": " \uE0B6",
+            "foreground": "#42E66C",
+            "background": "#29315A",
+            "properties": {
+              "prefix": "\uE718",
+              "postfix": "",
+              "display_version": false
+            }
+          },
+          {
+            "type": "ruby",
+            "style": "diamond",
+            "trailing_diamond": "\uE0B4",
+            "leading_diamond": " \uE0B6",
+            "foreground": "#E64747",
+            "background": "#29315A",
+            "properties": {
+              "prefix": "\uE791",
+              "postfix": "",
+              "display_version": false
+            }
+          },
+          {
+            "type": "java",
+            "style": "diamond",
+            "trailing_diamond": "\uE0B4",
+            "leading_diamond": " \uE0B6",
+            "foreground": "#E64747",
+            "background": "#29315A",
+            "properties": {
+              "prefix": "\uE738",
+              "postfix": "",
+              "display_version": false
+            }
+          },
+          {
+            "type": "julia",
+            "style": "diamond",
+            "trailing_diamond": "\uE0B4",
+            "leading_diamond": " \uE0B6",
+            "foreground": "#9B6BDF",
+            "background": "#29315A",
+            "properties": {
+              "prefix": "\uE624",
+              "display_version": false
+            }
+          },
+          {
+            "type": "battery",
+            "style": "diamond",
+            "trailing_diamond": "\uE0B4",
+            "leading_diamond": " \uE0B6",
+            "foreground": "#9B6BDF",
+            "background": "#29315A",
+            "properties": {
+              "battery_icon": "",
+              "discharging_icon": "\u21E3 ",
+              "charging_icon": "\u21E1 ",
+              "charged_icon": "\u0095 ",
+              "color_background": false,
+              "charged_color": "#4caf50",
+              "charging_color": "#40c4ff",
+              "discharging_color": "#ff5722",
+              "prefix": "",
+              "postfix": "",
+              "display_charging": true
+            }
           }
-        },
-        {
-          "type": "os",
-          "style": "plain",
-          "foreground": "#ffffff",
-          "background": "transparent"
-        },
-        {
-          "type": "path",
-          "style": "diamond",
-          "leading_diamond": "<transparent,#29315A>\uE0B0</>",
-          "trailing_diamond": "\uE0B0",
-          "foreground": "#ffffff",
-          "background": "#29315A",
-          "properties": {
-            "home_icon": "\uF7DB",
-            "folder_icon": "\uF6D7",
-            "folder_separator_icon": "<transparent> \uE0BD </>",
-            "style": "agnoster_short"
+        ]
+      },
+      {
+        "type": "prompt",
+        "alignment": "left",
+        "newline": true,
+        "segments": [
+          {
+            "type": "executiontime",
+            "style": "diamond",
+            "trailing_diamond": "\uE0B4 ",
+            "leading_diamond": "\uE0B6",
+            "foreground": "#AEA4BF",
+            "background": "#29315A",
+            "properties": {
+              "threshold": 150,
+              "style": "austin",
+              "prefix": "",
+              "postfix": ""
+            }
+          },
+          {
+            "type": "text",
+            "style": "diamond",
+            "trailing_diamond": "\uE0B4",
+            "leading_diamond": "\uE0B6",
+            "foreground": "red",
+            "background": "#16161E",
+            "properties": {
+                "prefix": "",
+                "text": "\u276F",
+                "postfix": ""
+            }
           }
-        },
-        {
-          "type": "git",
-          "style": "powerline",
-          "powerline_symbol": "\uE0B0",
-          "foreground": "#787C99",
-          "background": "#363B54",
-          "properties": {
-            "display_stash_count": true,
-            "staging_color": "#ff7420",
-            "display_status": true,
-            "display_upstream_icon": true,
-            "status_colors_enabled": true,
-            "local_changes_color": "#363B54",
-            "ahead_and_behind_color": "#363B54",
-            "behind_color": "#43335f",
-            "ahead_color": "#43335f"
-          }
-        },
-        {
-          "type": "executiontime",
-          "style": "diamond",
-          "leading_diamond": "<transparent,#43335f>\uE0B0</>",
-          "trailing_diamond": "\uE0B0",
-          "foreground": "#787C99",
-          "background": "#43335f",
-          "properties": {
-            "threshold": 0,
-            "style": "dallas",
-            "postfix": "s "
-          }
-        },
-        {
-          "type": "exit",
-          "style": "powerline",
-          "powerline_symbol": "\uE0B0",
-          "foreground": "#ffffff",
-          "background": "#910000",
-          "properties": {
-            "prefix": "<transparent> \uF12A</> "
-          }
-        }
-      ]
-    },
-    {
-      "type": "prompt",
-      "alignment": "right",
-      "segments": [
-        {
-          "type": "session",
-          "style": "diamond",
-          "trailing_diamond": "",
-          "leading_diamond": "\uE0C5",
-          "foreground": "#43CCEA",
-          "background": "#29315A",
-          "properties": {
-            "postfix": "",
-            "prefix": "  ",
-            "user_info_separator": "<transparent> / </>"
-          }
-        },
-        {
-          "type": "time",
-          "style": "plain",
-          "foreground": "#3EC669",
-          "background": "#29315A",
-          "properties": {
-            "time_format": "15:04:05",
-            "prefix": "<transparent> \uE0BA\uE0BC </>"
-          }
-        }
-      ]
-    },
-    {
-      "type": "prompt",
-      "alignment": "left",
-      "newline": true,
-      "segments": [
-        {
-          "type": "exit",
-          "style": "plain",
-          "foreground": "#ffffff",
-          "properties": {
-            "prefix": "\u276F",
-            "always_enabled": true,
-            "error_color": "#ff0000",
-            "display_exit_code": false
-          }
-        }
-      ]
-    }
-  ]
-}
+        ]
+      }
+    ]
+  }
